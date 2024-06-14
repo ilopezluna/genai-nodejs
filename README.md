@@ -8,6 +8,7 @@ container managed by [Testcontainers](https://www.testcontainers.com/).
 ## Table of Contents
 
 1. [Hello World](hello-world/README.md)
+2. [REST Chat](rest-chat/README.md)
 
 ## License
 
