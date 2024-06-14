@@ -15,8 +15,9 @@ const main = async () => {
             stream: false
         };
 
+        console.log('Waiting for model answer, this may take a while depending on the model size and your hardware...');
         const response = await axios.post(url, data);
-        console.log(response.data.response);
+        console.log(`🤖${response.data.response}`);
 
         await container.stop();
     } catch (error) {

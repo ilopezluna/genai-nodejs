@@ -1,0 +1,16 @@
+{
+  "name": "rest-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "testcontainers": "^10.9.0"
+  }
+}
