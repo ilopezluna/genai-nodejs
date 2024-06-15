@@ -19,7 +19,7 @@ by [Testcontainers](https://www.testcontainers.com/).
 
 ```bash
 git clone https://github.com/ilopezluna/genai-nodejs
-cd genai-nodejs    
+cd genai-nodejs/hello-world/
 ```
 
 2. Install the dependencies:
