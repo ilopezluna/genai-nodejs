@@ -9,6 +9,7 @@ container managed by [Testcontainers](https://www.testcontainers.com/).
 
 1. [Hello World](hello-world/README.md)
 2. [REST Chat](rest-chat/README.md)
+3. [Vision Model](vision-model/README.md)
 
 ## License
 

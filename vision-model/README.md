@@ -1,9 +1,9 @@
-# REST chat
+# Vision model
 
-This is a simple example of how to interact via REST with a chatbot model.
+This is a simple example of how to use a vision model to recognize images in a NodeJS application.
 
 The project contains a single NodeJS script, [index.js](index.js), that uses
-the [orca-mini](https://ollama.com/library/orca-mini) model to generate text based on a prompt.
+the [moondream](https://ollama.com/library/moondream) model to generate text based on an image in base64.
 The model runs locally inside [Ollama](https://ollama.com/) and Ollama runs in a container managed
 by [Testcontainers](https://www.testcontainers.com/).
 
@@ -19,7 +19,7 @@ by [Testcontainers](https://www.testcontainers.com/).
 
 ```bash
 git clone https://github.com/ilopezluna/genai-nodejs
-cd genai-nodejs/rest-chat/
+cd genai-nodejs/vision-model/
 ```
 
 2. Install the dependencies:
