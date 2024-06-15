@@ -11,6 +11,51 @@ container managed by [Testcontainers](https://www.testcontainers.com/).
 2. [REST Chat](rest-chat/README.md)
 3. [Vision Model](vision-model/README.md)
 
+## Requirements
+
+- NodeJS
+- npm
+- Docker
+
+## Instructions
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/ilopezluna/genai-nodejs.git
+    ```
+2. Change into the directory of the example you want to run:
+
+    ```bash
+    cd hello-world
+    ```
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+4. Run the script:
+
+    ```bash
+    npm start
+    ```
+
+## Questions/Answers
+
+- **Q:** Why do I need Ollama
+  **A:** Ollama allows you to run Large Language Models (LLMs) locally without the need for an internet connection. It
+  provides a simple API for interacting with the models.
+- **Q:** Why do I need Docker?
+  **A:** The model runs inside a Docker container managed by Testcontainers. Docker is required to run the container
+  locally.
+- **Q:** Why do I need Testcontainers?
+  **A:** Testcontainers is used to manage the lifecycle of the Docker container running the model. It ensures that the
+  container is started before the script runs and stopped after the script finishes.
+  **A:** Testcontainers provides programmatic control over Docker containers from within the code.
+- **Q:** Why does it take such a long time to run the script?
+  **A:** The first time you run the script, it will download the Docker image for the model, which can take some time
+  depending on your internet connection speed. Subsequent runs will be faster as the image will be cached locally.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
