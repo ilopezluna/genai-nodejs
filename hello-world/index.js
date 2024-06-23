@@ -14,7 +14,7 @@ const main = async () => {
 
         console.log('Waiting for model answer, this may take a while depending on the model size and your hardware...');
         const response = await axios.post(url, data);
-        console.log(`🤖${response.data.response}`);
+        console.log(`Response from LLM (🤖)-> ${response.data.response}`);
     } catch (error) {
         console.error('Error occurred:', error);
     }
