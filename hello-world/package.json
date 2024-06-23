@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "axios": "^1.7.2",
-    "testcontainers": "^10.9.0"
+    "@testcontainers/ollama": "^10.10.0",
+    "axios": "^1.7.2"
   },
   "dependencies": {
     "ci": "^2.3.0"
