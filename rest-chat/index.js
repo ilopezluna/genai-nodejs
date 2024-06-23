@@ -27,5 +27,5 @@ app.get('/', async (req, res) => {
         stream: false
     };
     const response = await post(url, data);
-    res.send(response.data.response)
+    res.send(`Response from LLM (🤖)-> ${response.data.response}`)
 });

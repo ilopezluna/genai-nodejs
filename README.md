@@ -46,8 +46,8 @@ container managed by [Testcontainers](https://www.testcontainers.com/).
   **A:** Ollama allows you to run Large Language Models (LLMs) locally without the need for an internet connection. It
   provides a simple API for interacting with the models.
 - **Q:** Why do I need Docker?
-  **A:** The model runs inside a Docker container managed by Testcontainers. Docker is required to run the container
-  locally.
+  **A:** Docker is used to run the Ollama container. This ensures that the model runs in a consistent and isolated
+  environment.
 - **Q:** Why do I need Testcontainers?
   **A:** Testcontainers is used to manage the lifecycle of the Docker container running the model. It ensures that the
   container is started before the script runs and stopped after the script finishes.
