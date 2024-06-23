@@ -6,16 +6,12 @@ const port = 3000
 let container;
 
 const main = async () => {
-    try {
-        console.log('Downloading Large Language Model, this may take a while...');
-        container = await new OllamaContainer("langchain4j/ollama-orca-mini").start();
-        app.listen(port, () => {
-            console.log(`Example app listening on port ${port}`)
-            console.log(`Visit http://localhost:${port}/?prompt=Tell%20me%20something%20interesting`)
-        });
-    } catch (error) {
-        console.error('Error occurred:', error);
-    }
+    console.log('Downloading Large Language Model, this may take a while...');
+    container = await new OllamaContainer("langchain4j/ollama-orca-mini").start();
+    app.listen(port, () => {
+        console.log(`Example app listening on port ${port}`)
+        console.log(`Visit http://localhost:${port}/?prompt=Tell%20me%20something%20interesting`)
+    });
 };
 main();
 

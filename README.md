@@ -11,6 +11,7 @@ container managed by [Testcontainers](https://www.testcontainers.com/).
 2. [REST Chat](rest-chat/README.md)
 3. [Vision Model](vision-model/README.md)
 4. [Embedding model from Hugging Face](hugging-face-embedding-model/README.md)
+5. [Chat model from Hugging Face](hugging-face-chat-model/README.md)
 
 ## Requirements
 
