@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@testcontainers/ollama": "^10.10.1",
+    "@testcontainers/ollama": "^10.10.4",
     "axios": "^1.7.2",
     "express": "^4.19.2"
   }
