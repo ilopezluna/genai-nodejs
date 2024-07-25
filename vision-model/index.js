@@ -4,12 +4,11 @@ const {OllamaContainer} = require("@testcontainers/ollama");
 
 const main = async () => {
     console.log('Downloading Large Language Model, this may take a while...');
-    const container = await new OllamaContainer("langchain4j/ollama-orca-mini").start();
-    await container.exec(['ollama', 'pull', 'moondream']);
+    const container = await new OllamaContainer("ilopezluna/ollama-moondream:0.2.8-1.8b").withReuse().start();
     const base64Image = readFileSync('whale.jpeg', 'base64');
     const url = `${container.getEndpoint()}/api/generate`;
     const data = {
-        model: "moondream",
+        model: "moondream:1.8b",
         prompt: "Describe the image",
         images: [base64Image],
         stream: false
