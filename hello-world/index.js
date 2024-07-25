@@ -3,10 +3,10 @@ const {OllamaContainer} = require("@testcontainers/ollama");
 
 const main = async () => {
     console.log('Downloading Large Language Model, this may take a while...');
-    const container = await new OllamaContainer("langchain4j/ollama-orca-mini").start();
+    const container = await new OllamaContainer("ilopezluna/ollama-orca-mini:0.2.8-3b").start();
     const url = `${container.getEndpoint()}/api/generate`;
     const data = {
-        model: "orca-mini",
+        model: "orca-mini:3b",
         prompt: "Hello world!",
         stream: false
     };
