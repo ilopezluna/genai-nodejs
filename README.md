@@ -12,6 +12,7 @@ container managed by [Testcontainers](https://www.testcontainers.com/).
 3. [Vision Model](vision-model/README.md)
 4. [Embedding model from Hugging Face](hugging-face-embedding-model/README.md)
 5. [Chat model from Hugging Face](hugging-face-chat-model/README.md)
+6. [Chat streaming](chat-streaming/README.md)
 
 ## Requirements
 
